@@ -1,0 +1,48 @@
+/* ============ Dark theme ============ */
+[data-theme="dark"]{
+  --bg-1:#1e1b4b;
+  --bg-2:#312e81;
+  --bg-3:#4c1d95;
+  --text:#f1f5f9;
+  --text-soft:#cbd5e1;
+  --text-mute:#94a3b8;
+  --card: rgba(30,27,75,.55);
+  --card-strong: rgba(30,27,75,.75);
+  --border: rgba(255,255,255,.08);
+  --border-soft: rgba(255,255,255,.06);
+  --shadow-sm: 0 6px 20px -8px rgba(0,0,0,.5);
+}
+[data-theme="dark"] body{
+  background:
+    radial-gradient(1200px 800px at 10% 10%, #1e1b4b, transparent 60%),
+    radial-gradient(1000px 700px at 90% 20%, #4c1d95, transparent 55%),
+    radial-gradient(900px 800px at 50% 100%, #312e81, transparent 60%),
+    #0b0d1f;
+}
+[data-theme="dark"] .blob{opacity:.35;mix-blend-mode:normal}
+[data-theme="dark"] .grid-pattern{
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px, transparent 1px);
+}
+[data-theme="dark"] .nav-item em{background:rgba(255,255,255,.08);color:var(--text-soft)}
+[data-theme="dark"] .nav-item:hover{background:rgba(255,255,255,.06)}
+[data-theme="dark"] .icon-btn{background:rgba(255,255,255,.06)}
+[data-theme="dark"] .composer-main{background:rgba(255,255,255,.04)}
+[data-theme="dark"] .composer-meta select,
+[data-theme="dark"] .composer-meta input[type="date"]{
+  background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.08);color:var(--text);
+  color-scheme:dark;
+}
+[data-theme="dark"] .chip{background:rgba(255,255,255,.06);color:var(--text-soft)}
+[data-theme="dark"] .task{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.06)}
+[data-theme="dark"] .task:hover{background:rgba(255,255,255,.08)}
+[data-theme="dark"] .checkbox{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+[data-theme="dark"] .badge-high{background:rgba(244,63,94,.18);color:#fda4af}
+[data-theme="dark"] .badge-medium{background:rgba(245,158,11,.18);color:#fcd34d}
+[data-theme="dark"] .badge-low{background:rgba(16,185,129,.18);color:#6ee7b7}
+[data-theme="dark"] .badge-cat{background:rgba(168,85,247,.18);color:#d8b4fe}
+[data-theme="dark"] .badge-due{background:rgba(59,130,246,.18);color:#93c5fd}
+[data-theme="dark"] .icon-mini:hover{background:rgba(168,85,247,.2)}
+[data-theme="dark"] .search input::placeholder,
+[data-theme="dark"] .composer-main input::placeholder{color:var(--text-mute)}
